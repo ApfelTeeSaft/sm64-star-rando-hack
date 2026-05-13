@@ -71,8 +71,9 @@ function updateRunUI() {
 
 function onStartRun() {
 	const maxStars = parseInt(document.getElementById('runMaxStars').value, 10) || 0
-	const maxDifficulty = parseInt(document.getElementById('runMaxDiff').value, 10) || 5
-	if (!startRun({ maxStars, maxDifficulty })) {
+	const orderByStage = document.getElementById('runOrderByStage').checked
+	const difficultyWeights = [1, 2, 3, 4, 5].map((i) => parseInt(document.getElementById(`diffWeight${i}`).value, 10))
+	if (!startRun({ maxStars, orderByStage, difficultyWeights })) {
 		alert('No active stars match the selected options!')
 		return
 	}
@@ -136,6 +137,11 @@ document.getElementById('toggleAllCheckbox').addEventListener('change', (e) => {
 document.getElementById('startRunBtn').addEventListener('click', onStartRun)
 document.getElementById('endRunBtn').addEventListener('click', onEndRun)
 document.getElementById('pickStarBtn').addEventListener('click', pickRandomStar)
+for (let i = 1; i <= 5; i++) {
+	document.getElementById(`diffWeight${i}`).addEventListener('input', (e) => {
+		document.getElementById(`diffWeight${i}Val`).textContent = e.target.value
+	})
+}
 document.addEventListener('keydown', (e) => {
 	if (e.code === 'Space') {
 		if (document.activeElement.tagName.toLowerCase() === 'input') return

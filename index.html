@@ -43,14 +43,36 @@
 							<input type="number" id="runMaxStars" min="1" placeholder="All" />
 						</div>
 						<div class="run-option-row">
-							<label for="runMaxDiff">Max difficulty</label>
-							<select id="runMaxDiff">
-								<option value="5" selected>Any (1–5)</option>
-								<option value="1">1 – Trivial</option>
-								<option value="2">2 – Easy</option>
-								<option value="3">3 – Medium</option>
-								<option value="4">4 – Hard</option>
-							</select>
+							<label for="runOrderByStage">Order by stage</label>
+							<input type="checkbox" id="runOrderByStage" />
+						</div>
+						<div class="diff-weights">
+							<span class="diff-weights-label">Difficulty weights</span>
+							<div class="diff-weight-row">
+								<span class="diff-weight-label dw1">●</span>
+								<input type="range" id="diffWeight1" min="0" max="5" value="5" />
+								<span class="diff-weight-val" id="diffWeight1Val">5</span>
+							</div>
+							<div class="diff-weight-row">
+								<span class="diff-weight-label dw2">●</span>
+								<input type="range" id="diffWeight2" min="0" max="5" value="5" />
+								<span class="diff-weight-val" id="diffWeight2Val">5</span>
+							</div>
+							<div class="diff-weight-row">
+								<span class="diff-weight-label dw3">●</span>
+								<input type="range" id="diffWeight3" min="0" max="5" value="5" />
+								<span class="diff-weight-val" id="diffWeight3Val">5</span>
+							</div>
+							<div class="diff-weight-row">
+								<span class="diff-weight-label dw4">●</span>
+								<input type="range" id="diffWeight4" min="0" max="5" value="5" />
+								<span class="diff-weight-val" id="diffWeight4Val">5</span>
+							</div>
+							<div class="diff-weight-row">
+								<span class="diff-weight-label dw5">●</span>
+								<input type="range" id="diffWeight5" min="0" max="5" value="5" />
+								<span class="diff-weight-val" id="diffWeight5Val">5</span>
+							</div>
 						</div>
 					</div>
 					<div class="run-buttons">

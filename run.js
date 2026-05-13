@@ -22,14 +22,26 @@ export function getTotal() {
 	return total
 }
 
-export function startRun({ maxStars = 0, maxDifficulty = 5 } = {}) {
+function weightedSample(arr, weights) {
+	// Exclude difficulties with weight 0
+	const eligible = arr.filter((s) => weights[s.difficulty - 1] > 0)
+	// Assign each star a score: U^(1/w) — higher weight → higher expected score
+	return eligible
+		.map((s) => ({ s, key: Math.random() ** (1 / weights[s.difficulty - 1]) }))
+		.sort((a, b) => b.key - a.key)
+		.map(({ s }) => s)
+}
+
+export function startRun({ maxStars = 0, orderByStage = false, difficultyWeights = [5, 5, 5, 5, 5] } = {}) {
 	let active = STARS.filter((s) => s.active)
-	if (maxDifficulty < 5) active = active.filter((s) => s.difficulty <= maxDifficulty)
 	if (active.length === 0) return false
 	STARS.forEach((s) => (s.done = false))
-	queue = [...active]
-	shuffle(queue)
+	queue = weightedSample(active, difficultyWeights)
 	if (maxStars > 0 && maxStars < queue.length) queue = queue.slice(0, maxStars)
+	if (queue.length === 0) return false
+	if (orderByStage) {
+		queue.sort((a, b) => b.id - a.id)
+	}
 	total = queue.length
 	return true
 }
