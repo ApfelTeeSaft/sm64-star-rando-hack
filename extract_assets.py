@@ -3,10 +3,16 @@ import sys
 import os
 import json
 
+PROTECTED_ASSETS = {
+    "sound/samples/sfx_mario_peach/07_mario_its_a_me_mario.aiff",
+}
+
 
 def read_asset_map():
     with open("assets.json") as f:
         ret = json.load(f)
+    for asset in PROTECTED_ASSETS:
+        ret.pop(asset, None)
     return ret
 
 
@@ -50,7 +56,7 @@ def clean_assets(local_asset_file):
     assets = set(read_asset_map().keys())
     assets.update(read_local_asset_list(local_asset_file))
     for fname in list(assets) + [".assets-local.txt"]:
-        if fname.startswith("@"):
+        if fname.startswith("@") or fname in PROTECTED_ASSETS:
             continue
         try:
             remove_file(fname)
@@ -268,6 +274,8 @@ def main():
 
     # Remove old assets
     for asset in previous_assets:
+        if asset in PROTECTED_ASSETS:
+            continue
         if asset not in new_assets:
             try:
                 remove_file(asset)

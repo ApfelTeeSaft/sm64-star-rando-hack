@@ -58,6 +58,7 @@ build/*
 /assets/**/*.bin
 /sound/**/*.m64
 /sound/**/*.aiff
+!/sound/samples/sfx_mario_peach/07_mario_its_a_me_mario.aiff
 !/levels/**/*custom*.png
 !/levels/**/*custom*/**/*.png
 !/actors/**/*custom*.png
