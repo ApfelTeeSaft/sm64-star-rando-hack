@@ -1,0 +1,73 @@
+{
+    "date": "2026-05-29",
+    "sample_bank": "rando_voice",
+    "envelopes": {
+        "voice_envelope": [
+            [
+                2,
+                32700
+            ],
+            [
+                1,
+                32700
+            ],
+            [
+                32700,
+                29430
+            ],
+            "hang"
+        ]
+    },
+    "instruments": {
+        "inst00": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "008_to_the_top_of_the_fortress"
+        },
+        "inst01": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "009_shoot_into_the_wild_blue"
+        },
+        "inst02": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "010_wf_red_coins_on_the_floating_isle"
+        },
+        "inst03": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "011_fall_onto_the_caged_island"
+        },
+        "inst04": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "012_blast_away_the_wall"
+        },
+        "inst05": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "013_wf_one_hundred_coins"
+        },
+        "inst06": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "014_plunder_in_the_sunken_ship"
+        },
+        "inst07": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "015_can_the_eel_come_out_to_play"
+        }
+    },
+    "instrument_list": [
+        "inst00",
+        "inst01",
+        "inst02",
+        "inst03",
+        "inst04",
+        "inst05",
+        "inst06",
+        "inst07"
+    ]
+}

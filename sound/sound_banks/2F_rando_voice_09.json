@@ -1,0 +1,73 @@
+{
+    "date": "2026-05-29",
+    "sample_bank": "rando_voice",
+    "envelopes": {
+        "voice_envelope": [
+            [
+                2,
+                32700
+            ],
+            [
+                1,
+                32700
+            ],
+            [
+                32700,
+                29430
+            ],
+            "hang"
+        ]
+    },
+    "instruments": {
+        "inst00": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "072_secrets_in_the_shallows_and_sky"
+        },
+        "inst01": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "073_express_elevator_hurry_up"
+        },
+        "inst02": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "074_wdw_go_to_town_for_red_coins"
+        },
+        "inst03": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "075_quick_race_through_downtown"
+        },
+        "inst04": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "076_wdw_one_hundred_coins"
+        },
+        "inst05": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "077_scale_the_mountain"
+        },
+        "inst06": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "078_mystery_of_the_monkey_cage"
+        },
+        "inst07": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "079_ttm_scary_shrooms_red_coins"
+        }
+    },
+    "instrument_list": [
+        "inst00",
+        "inst01",
+        "inst02",
+        "inst03",
+        "inst04",
+        "inst05",
+        "inst06",
+        "inst07"
+    ]
+}

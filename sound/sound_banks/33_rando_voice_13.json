@@ -1,0 +1,73 @@
+{
+    "date": "2026-05-29",
+    "sample_bank": "rando_voice",
+    "envelopes": {
+        "voice_envelope": [
+            [
+                2,
+                32700
+            ],
+            [
+                1,
+                32700
+            ],
+            [
+                32700,
+                29430
+            ],
+            "hang"
+        ]
+    },
+    "instruments": {
+        "inst00": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "104_rr_one_hundred_coins"
+        },
+        "inst01": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "105_bitdw_8_red_coins"
+        },
+        "inst02": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "106_bitfs_8_red_coins"
+        },
+        "inst03": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "107_bits_8_red_coins"
+        },
+        "inst04": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "108_box_star"
+        },
+        "inst05": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "109_under_21_seconds"
+        },
+        "inst06": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "110_cotmc_8_red_coins"
+        },
+        "inst07": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "111_totwc_8_red_coins"
+        }
+    },
+    "instrument_list": [
+        "inst00",
+        "inst01",
+        "inst02",
+        "inst03",
+        "inst04",
+        "inst05",
+        "inst06",
+        "inst07"
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "date": "2026-05-29",
+    "sample_bank": "rando_voice",
+    "envelopes": {
+        "voice_envelope": [
+            [
+                2,
+                32700
+            ],
+            [
+                1,
+                32700
+            ],
+            [
+                32700,
+                29430
+            ],
+            "hang"
+        ]
+    },
+    "instruments": {
+        "inst00": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "016_treasure_of_the_ocean_cave"
+        },
+        "inst01": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "017_jrb_red_coins_on_the_ship_afloat"
+        },
+        "inst02": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "018_blast_to_the_stone_pillar"
+        },
+        "inst03": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "019_through_the_jet_stream"
+        },
+        "inst04": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "020_jrb_one_hundred_coins"
+        },
+        "inst05": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "021_slip_slidin_away"
+        },
+        "inst06": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "022_lil_penguin_lost"
+        },
+        "inst07": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "023_big_penguin_race"
+        }
+    },
+    "instrument_list": [
+        "inst00",
+        "inst01",
+        "inst02",
+        "inst03",
+        "inst04",
+        "inst05",
+        "inst06",
+        "inst07"
+    ]
+}

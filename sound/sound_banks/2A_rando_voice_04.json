@@ -1,0 +1,73 @@
+{
+    "date": "2026-05-29",
+    "sample_bank": "rando_voice",
+    "envelopes": {
+        "voice_envelope": [
+            [
+                2,
+                32700
+            ],
+            [
+                1,
+                32700
+            ],
+            [
+                32700,
+                29430
+            ],
+            "hang"
+        ]
+    },
+    "instruments": {
+        "inst00": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "032_big_boo_s_balcony"
+        },
+        "inst01": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "033_eye_to_eye_in_the_secret_room"
+        },
+        "inst02": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "034_bbh_one_hundred_coins"
+        },
+        "inst03": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "035_swimming_beast_in_the_cavern"
+        },
+        "inst04": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "036_hmc_elevate_for_8_red_coins"
+        },
+        "inst05": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "037_metal_head_mario_can_move"
+        },
+        "inst06": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "038_navigating_the_toxic_maze"
+        },
+        "inst07": {
+            "release_rate": 208,
+            "envelope": "voice_envelope",
+            "sound": "039_a_maze_ing_emergency_exit"
+        }
+    },
+    "instrument_list": [
+        "inst00",
+        "inst01",
+        "inst02",
+        "inst03",
+        "inst04",
+        "inst05",
+        "inst06",
+        "inst07"
+    ]
+}
